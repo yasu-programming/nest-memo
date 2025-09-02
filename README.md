@@ -21,9 +21,40 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+# Nest Memo API
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+NestJS学習用のシンプルなメモアプリケーションのREST API
+
+## 概要
+
+このプロジェクトは、NestJSの基本的な概念を学習するために作成されたメモ管理APIです。CRUD操作（作成・読取・更新・削除）を通じて、以下のNestJSの機能を学べます：
+
+- Module、Controller、Serviceの基本構造
+- DTOとバリデーション
+- TypeORMを使用したデータベース操作
+- RESTful APIの設計
+- エラーハンドリング
+- 依存性注入（DI）
+
+## API エンドポイント
+
+| HTTP Method | エンドポイント | 説明 |
+|-------------|---------------|------|
+| POST        | `/memos`      | 新しいメモを作成 |
+| GET         | `/memos`      | 全てのメモを取得 |
+| GET         | `/memos/:id`  | 特定のメモを取得 |
+| PUT         | `/memos/:id`  | メモを更新 |
+| DELETE      | `/memos/:id`  | メモを削除 |
+
+詳細な仕様は [`docs/api-requirements.md`](docs/api-requirements.md) を参照してください。
+
+## 技術スタック
+
+- **フレームワーク**: NestJS
+- **データベース**: SQLite（開発用）
+- **ORM**: TypeORM
+- **バリデーション**: class-validator
+- **変換**: class-transformer
 
 ## Project setup
 
